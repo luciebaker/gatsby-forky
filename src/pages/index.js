@@ -1,21 +1,21 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import styled from 'styled-components'
+import { FaCheckCircle } from 'react-icons/fa'
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to our new Gatsby restaurant page.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h3>Welcome to Forky's</h3>
+    <Button>Click me <FaCheckCircle /></Button>
+  
   </Layout>
 )
+
+const Button = styled.button`
+background: green;
+color: white;
+`
 
 export default IndexPage
