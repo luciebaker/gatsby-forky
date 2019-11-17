@@ -22,6 +22,21 @@ module.exports = {
         // Add any options here
     },
   },
+  {
+    resolve: `gatsby-plugin-prefetch-google-fonts`,
+    options: {
+      fonts: [
+        {
+          family: `Montserrat`,
+          variants: [`400`, '500'],
+        },
+        {
+          family: `Raleway`,
+          variants: [`400`, `500`]
+        },
+      ],
+    },
+  },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

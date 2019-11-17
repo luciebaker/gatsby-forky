@@ -1,21 +1,21 @@
 import React from "react"
-import styled from 'styled-components'
-import { FaCheckCircle } from 'react-icons/fa'
+// import styled from 'styled-components'
 import Layout from "../components/layout"
+import { HomeHeader, Banner, BannerButton} from '../utilities'
+import img from "../images/bcg/homeBcg.jpeg"
+import HomeInfo from '../components/homepage.components/homeInfoComponent'
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h3>Welcome to Forky's</h3>
-    <Button>Click me <FaCheckCircle /></Button>
-  
+
+    <HomeHeader img={img}><Banner title="Welcome to Forky's" subtitle="Add cool subtitle">
+    <BannerButton style={{margin: '2.5rem auto'}}>Menu</BannerButton>
+    </Banner>
+    </HomeHeader>
+   <HomeInfo />
   </Layout>
 )
-
-const Button = styled.button`
-background: green;
-color: white;
-`
 
 export default IndexPage

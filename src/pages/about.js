@@ -3,11 +3,13 @@ import styled from 'styled-components'
 // import { FaCheckCircle } from 'react-icons/fa'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { PageHeader, Banner } from '../utilities'
+import aboutImg from '../images/bcg/aboutBcg.jpeg'
 
 const AboutPage = () => (
   <Layout>
     <SEO title="About" />
-    <h3> About Forky's</h3>
+    <PageHeader img={aboutImg}><Banner title="About Forky's" subtitle="Add cool subtitle"></Banner></PageHeader>
   </Layout>
 )
 
