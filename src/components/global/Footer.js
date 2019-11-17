@@ -43,8 +43,6 @@ background: black;
     color: white;
     text-align: center;
     padding: 0.5rem 1rem 1.5rem 1rem;
-    /* margin: 1rem auto; */
-    /* font-family: montserrat; */
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
 }
