@@ -27,6 +27,7 @@ export default class Footer extends Component {
         return (
             <FooterWrapper>
                <h1 className="title">Forky's</h1>
+               <p className="location">Join us, every evening at our midtown location: 850 6th Ave, New York, NY</p>
                <div className="icons">
                {this.state.icons.map(item => (<a href={item.path} key={item.id} target="_blank" rel="noopener noreferrer">{item.icon}</a>))}
                </div>
@@ -46,7 +47,11 @@ background: black;
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
 }
-
+.location {
+    color: white;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
 .icons {
     width: 10rem;
     display: flex;
@@ -62,7 +67,7 @@ background: black;
     }
 }
 .copyright {
-    color: #4d4d4d;
+    color: #828282;
     text-align: center;
     margin: 1rem 0 0.1rem 0;
 }
