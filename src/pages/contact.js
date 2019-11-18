@@ -1,6 +1,4 @@
 import React from "react"
-import styled from 'styled-components'
-// import { FaCheckCircle } from 'react-icons/fa'
 import Layout from "../components/layout"
 import { PageHeader, Banner, Section, Title } from '../utilities'
 import contactImg from '../images/bcg/homeBcg.jpg'

@@ -1,8 +1,7 @@
 import React from "react"
-// import styled from 'styled-components'
 import Layout from "../components/layout"
-import { PageHeader, Banner, Section, Title } from '../utilities'
-import menuImg from '../images/bcg/menuBcg.jpeg'
+import { PageHeader, Banner } from '../utilities'
+import menuImg from '../images/homeGallery/img-1.jpg'
 import Entrees from '../components/menupage.components/entrees'
 import Appetizers from '../components/menupage.components/appetizers'
 import Deserts from '../components/menupage.components/deserts'

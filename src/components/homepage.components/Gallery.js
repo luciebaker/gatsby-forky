@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {StaticQuery, graphql} from 'gatsby'
-import { styles, Section } from '../../utilities'
+import { Section } from '../../utilities'
 import Img from 'gatsby-image'
 
 export default function Gallery() {

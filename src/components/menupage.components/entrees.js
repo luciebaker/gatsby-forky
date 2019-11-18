@@ -7,7 +7,7 @@ import styled from 'styled-components'
 export default function entrees() {
     return (
       <Section>
-        <Title title="Entrees" message="Only the best" />
+        <Title title="Entrees" message="Time to get serious! Here are our" />
         <ProductList>
           <StaticQuery
             query={graphql`

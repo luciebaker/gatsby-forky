@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { styles, Section, Title, SectionButton } from '../../utilities'
+import { Section, Title, SectionButton } from '../../utilities'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 

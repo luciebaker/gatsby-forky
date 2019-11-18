@@ -34,7 +34,7 @@ export default function Menu() {
           />
         </ProductList>
         <Link to="/menu/" style={{ textDecoration: 'none' }}>
-          <SectionButton style={{ margin: '2rem auto' }}> menu</SectionButton>
+          <SectionButton style={{ margin: '2rem auto' }}> See the menu</SectionButton>
         </Link>
       </Section>
     )

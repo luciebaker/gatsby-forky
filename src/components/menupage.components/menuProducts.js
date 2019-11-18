@@ -23,7 +23,6 @@ export default function menuProduct({ product }) {
 export const ProductWrapper = styled.div`
   @media (min-width: 576px) {
     display: grid;
-    grid-template-columns: auto 1fr;
     grid-column-gap: 1rem;
   }
   .product-content {
@@ -42,10 +41,4 @@ export const ProductWrapper = styled.div`
   .info {
     margin-top: 0.5rem;
   }
-  
-  // @media (min-width: 650px) {
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr;
-  //   grid-column-gap: 1rem;
-  // }
 `
