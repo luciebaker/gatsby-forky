@@ -1,41 +1,37 @@
 import React from 'react'
-import Product from './Product'
+import MenuProduct from './menuProducts'
 import { StaticQuery, graphql } from 'gatsby'
-import { Section, Title, SectionButton } from '../../utilities'
+import { Section, Title } from '../../utilities'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 
-export default function Menu() {
+export default function deserts() {
     return (
       <Section>
-        <Title title="Featured Dishes" message="A little preview of our" />
+        <Title title="Our Deserts" message="For a sweet finish" />
         <ProductList>
           <StaticQuery
             query={graphql`
               {
-                items: allContentfulMenu {
+                items: allContentfulDesert {
                   edges {
                     node {
-                      name
+                      title
                       price
                       id
-                      ingredients
+                      description
                     }
                   }
                 }
               }
             `}
             render={data => {
-              const { edges: food } = data.items
-              return food.map(item => {
-                return <Product key={item.node.id} product={item.node} />
+              const { edges: sweet } = data.items
+              return sweet.map(item => {
+                return <MenuProduct key={item.node.id} product={item.node} />
               })
             }}
           />
         </ProductList>
-        <Link to="/menu/" style={{ textDecoration: 'none' }}>
-          <SectionButton style={{ margin: '2rem auto' }}> menu</SectionButton>
-        </Link>
       </Section>
     )
   }

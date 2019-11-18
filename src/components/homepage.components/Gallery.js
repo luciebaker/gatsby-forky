@@ -9,21 +9,21 @@ export default function Gallery() {
       <StaticQuery
         query={graphql`
           {
-            img1: file(relativePath: { eq: "homeGallery/img-1.jpeg" }) {
+            img1: file(relativePath: { eq: "homeGallery/img-1.jpg" }) {
               childImageSharp {
                 fluid(maxWidth: 500) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
-            img2: file(relativePath: { eq: "homeGallery/img-2.jpeg" }) {
+            img2: file(relativePath: { eq: "homeGallery/img-2.jpg" }) {
               childImageSharp {
                 fluid(maxWidth: 500) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
-            img3: file(relativePath: { eq: "homeGallery/img-3.jpeg" }) {
+            img3: file(relativePath: { eq: "homeGallery/img-3.jpg" }) {
               childImageSharp {
                 fluid(maxWidth: 500) {
                   ...GatsbyImageSharpFluid_tracedSVG
@@ -41,15 +41,12 @@ export default function Gallery() {
               <GalleryWrapper>
                 <div className="item item-1">
                   <Img fluid={img1} />
-                  <p className="info">Try our awesome pizza</p>
                 </div>
                 <div className="item item-2">
                   <Img fluid={img2} />
-                  <p className="info">Simply Delicious!</p>
                 </div>
                 <div className="item item-3">
                   <Img fluid={img3} />
-                  <p className="info">Awesome Steak</p>
                 </div>
               </GalleryWrapper>
             </Section>
@@ -65,14 +62,6 @@ export default function Gallery() {
     grid-row-gap: 1rem;
     .item {
       position: relative;
-    }
-    .info {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: ${styles.colors.mainYellow};
-      padding: 0.1rem 0.3rem;
-      text-transform: capitalize;
     }
     @media (min-width: 576px) {
       grid-template-columns: 1fr 1fr;

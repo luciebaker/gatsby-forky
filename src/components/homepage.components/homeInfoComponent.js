@@ -21,17 +21,17 @@ export default class homeInfoComponent extends Component {
 }
 
 const InfoWrapper = styled.div`
-    width: 80%;
+    width: 85%;
     margin: 1.2rem auto;
     .text {
         line-height: 2rem;
         color: #2b2d2f;
     }
     @media (min-width: 768px) {
-        width: 70%
+        width: 75%
     }
 
     @media (min-width: 992px) {
-        width: 60%
+        width: 65%
     }
 `

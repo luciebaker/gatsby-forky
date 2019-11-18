@@ -21,7 +21,7 @@ text-align: center;
 
 }
 .subtitle {
-    color: ${styles.colors.mainWhite};
+    color ${styles.colors.mainYellow};
     font-size: 2.2rem;
 }
 `

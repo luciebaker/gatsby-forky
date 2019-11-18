@@ -2,18 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 import { styles } from '../../utilities'
 
-export default function Product({ product }) {
-  const { name, price, ingredients } = product
+export default function menuProduct({ product }) {
+  const { title, price, description } = product
 
   return (
     <ProductWrapper>
       <div className="text">
         <div className="product-content">
-          <h3 className="name">{name}</h3>
+          <h3 className="name">{title}</h3>
           <h3 className="price">${price}</h3>
         </div>
         <div>
-        <p className="info">{ingredients}</p>
+        <p className="info">{description}</p>
         </div>
       </div>
     </ProductWrapper>
@@ -41,10 +41,8 @@ export const ProductWrapper = styled.div`
   }
   .info {
     margin-top: 0.5rem;
-   
-  
-
   }
+  
   // @media (min-width: 650px) {
   //   display: grid;
   //   grid-template-columns: 1fr 1fr;
