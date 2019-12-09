@@ -31,7 +31,7 @@ export default class Footer extends Component {
                <div className="icons">
                {this.state.icons.map(item => (<a href={item.path} key={item.id} target="_blank" rel="noopener noreferrer">{item.icon}</a>))}
                </div>
-               <p className="copyright">&copy; 2019 Forky's</p>
+               <p className="copyright">&copy; 2019 Forky's | A concept website by <a href="https://lbmedia.netlify.com" target="_blank" rel="noopener noreferrer">LB Media</a></p>
             </FooterWrapper>
         )
     }

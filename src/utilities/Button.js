@@ -8,6 +8,7 @@ background: transparent;
 padding: 0.5rem 1rem;
 text-transform: uppercase;
 font-size: 1.5rem;
+border: 0.18rem solid white;
 margin-bottom: 1rem;
 ${styles.transition({})};
 &:hover{

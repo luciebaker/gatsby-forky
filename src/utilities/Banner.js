@@ -17,12 +17,11 @@ margin-bottom: 3rem;
 text-align: center;
 .title {
     color: ${styles.colors.mainWhite};
-    font-size: 3rem;
-
+    font-size: 3.5rem;
 }
 .subtitle {
     color ${styles.colors.mainYellow};
-    font-size: 2.2rem;
+    font-size: 2.4rem;
 }
 `
 
